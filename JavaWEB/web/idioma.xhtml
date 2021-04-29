@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/_template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns="http://www.w3.org/1999/xhtml">
+
+    <ui:define name="content">
+        <h:form>
+            <p:menuButton value="Menu">
+                <p:menuitem value="#{msgs.perfil}" action="/telaPerfil" />
+                <p:menuitem value="#{msgs.verJogos}" action="/telaUser" />
+                <p:menuitem value="#{msgs.idioma}" action="/idioma" />
+                <p:separator/>
+                <p:menuitem value="#{msgs.sair}" action="#{usuarioBean.sair}" icon="ui-icon-closethick"/>
+            </p:menuButton>
+        </h:form>
+        <h:form>
+            
+        </h:form> 
+    </ui:define>
+</ui:composition>
